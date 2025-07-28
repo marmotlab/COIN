@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>WMRs-Formation-with-LLM</title>
+  <link rel="icon" type="image/x-icon" href="static/images/Tsinghua_University_Logo.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Demonstration for WMRs-Formation</h1>
+              <h2 class="subtitle has-text-centered"> <!-- Adjusted font size and alignment -->
+                WMRs-Formation here refers to the formation control of wheeled mobile robots (WMRs) integrating Large Language Models (LLMs).
+              </h2>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=ncDpC9gAAAAJ&hl=en" target="_blank">Jianghong Dong</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="https://www.marmotlab.org/people.html" target="_blank">Yifeng Zhang</a><sup>2</sup>
+                </span>
+                <span class="author-block">
+                  <a href="https://wjiawei.com" target="_blank">Jiawei Wang</a><sup>3</sup>,</span>
+
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=MlK35S4AAAAJ&hl=en" target="_blank">Mengchi Cai</a><sup>1</sup>,
+                  </span>
+
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=x58fnLQAAAAJ&hl=en" target="_blank">Keqiang Li</a><sup>1</sup>, and 
+                  </span>
+                  <span class="author-block">
+                    <a href="https://www.marmotlab.org/bio.html" target="_blank">Guillaume Sartoretti</a><sup>2</sup>
+                  </span>
+
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Tsinghua University, <sup>2</sup>National University of Singapore, <sup>3</sup>University of Michigan</span>
+                  </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">   <p style="color: blueviolet;"> All video source files can be accessed <a href="https://github.com/dongjh20/WMRs-Formation-with-LLM/tree/master/static/videos" target="_blank">here</a>.  </p>
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">Simulations</h2>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">1. Comprehensive experiments</h2>
+      <video poster="" id="tree" controls muted height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/formationSimulation.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        During formation switching, the WMR formations encounter obstacles and is able to avoid them while switching to the new formation. Our method demonstrates strong adaptability and flexibility to real-world environments. When the need for formation switching is identified, we leverage LLMs to understand the environment and task requirements, and then reason to generate a new desired formation.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">2. Formation navigation with dense obstacles</h2>
+      <video poster="" id="tree" controls muted height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/formationDense.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Formation navigating through dense obstacles. Our spatio-temporal joint optimization trajectory planning method demonstrates strong coordination and multi-objective optimization capabilities, making it well-suited for such challenging environments.      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">Real-world experiments</h2>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h3 class="title is-3">1. Formation navigation</h3>
+      <video poster="" id="tree" controls muted height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/formationMotion.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Seven robots arranged in three columns move in a hexagonal formation.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">2. Autonomous obstacle avoidance during formation navigation</h2>
+      <video poster="" id="tree" controls muted height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/formationObsAvoid.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        The two outermost robots balance formation maintenance and obstacle avoidance simultaneously. This capability enhances the adaptability and flexibility of the WMR formations in real-world environments, as the surroundings are not always open and free of obstacles.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">3. Formation switching</h2>
+      <video poster="" id="tree" controls muted height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/formationSwitching.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        The formation of seven WMRs switches from three columns to two. Such switching enhances the WMR formations' adaptability to real-world environments. For example, sudden changes in navigable areas represent one type of environments where the formation must adjust accordingly.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Formation control of wheeled mobile robots (WMRs) has been extensively studied for its applications in many fields such as logistics transportation and resource exploration. However, previous work has mainly focused on simple scenarios with fixed formation configurations, which significantly limits their flexibility and adaptability in  real-world environments with obstacles. To address this, we propose a semi-distributed formation control approach for WMRs that combines centralized formation generation with distributed trajectory planning. We leverage the pre-trained generalized understanding and reasoning capabilities of large language models (LLMs) to comprehend complex real-world environments and dynamic tasks, adaptively generating new desired formations. We also present a distributed formation trajectory planning method that effectively coordinates each WMR’s spatio-temporal relationships with others during formation navigation, and efficiently balances conflicting objectives, such as formation maintenance and obstacle avoidance, via integrated optimization. Simulations and real-world experiments confirm the effectiveness and superiority of our approach over advanced baselines. Experiment videos are available at https://dongjh20.github.io/WMRs-Formation-with-LLM.     
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Single Image with Title -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3" style="max-width: 60%; margin: auto; text-align: center;">Method framework</h2> <!-- Title for the image -->
+      <br>
+      <div class="image-container has-text-centered" style="max-width: 60%; margin: auto;">
+        <!-- Your image here with adjusted width -->
+        <img src="static/images/framework V26.jpg" alt="Descriptive Alt Text" style="height: auto;"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!--BibTex citation 
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p class="columns is-centered">
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.          </p>
+          <p class="columns is-centered" >&copy;2024 Jianghong Dong</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- 访客地理位置代码 -->
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      
+      <div class="image-container has-text-centered" style="max-width: 60%; margin: auto;">
+        <!-- Your image here with adjusted width -->
+        <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=O4FjFOfenDlfZzoaMVwO2CSUOZRAyVWLliMDFcNEwmk&cl=ffffff&w=a"></script>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+<!-- Default Statcounter code for WMRs-Formation-with-LLM
+https://github.com/dongjh20/WMRs-Formation-with-LLM -->
+<script type="text/javascript">
+  var sc_project=13036282; 
+  var sc_invisible=0; 
+  var sc_security="c527f9bb"; 
+  var scJsHost = "https://";
+  document.write("<sc"+"ript type='text/javascript' src='" +
+  scJsHost+
+  "statcounter.com/counter/counter.js'></"+"script>");
+  </script>
+  <noscript><div class="statcounter"><a title="Web Analytics
+  Made Easy - Statcounter" href="https://statcounter.com/"
+  target="_blank"><img class="statcounter"
+  src="https://c.statcounter.com/13036282/0/c527f9bb/0/"
+  alt="Web Analytics Made Easy - Statcounter"
+  referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+  <!-- End of Statcounter Code -->
+
+
+  </body>
+  </html>
