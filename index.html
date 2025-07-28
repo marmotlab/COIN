@@ -25,7 +25,7 @@
 
 
   <title>WMRs-Formation-with-LLM</title>
-  <link rel="icon" type="image/x-icon" href="static/images/Tsinghua_University_Logo.png">
+  <link rel="icon" type="image/x-icon" href="static/images/NUS_logo_full-vertical.jpg">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -52,35 +52,38 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Demonstration for WMRs-Formation</h1>
+            <h1 class="title is-1 publication-title">Demonstration for COIN</h1>
               <h2 class="subtitle has-text-centered"> <!-- Adjusted font size and alignment -->
-                WMRs-Formation here refers to the formation control of wheeled mobile robots (WMRs) integrating Large Language Models (LLMs).
+                COIN here refers to Collaborative(CO-) Interaction-Aware(-IN) Multi-Agent Reinforcement Learning for Self-Driving Systems.
               </h2>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=ncDpC9gAAAAJ&hl=en" target="_blank">Jianghong Dong</a><sup>1</sup>,</span>
+                <a href="" target="_blank">Yifeng Zhang</a><sup>1</sup>,</span>
                 <span class="author-block">
-                  <a href="https://www.marmotlab.org/people.html" target="_blank">Yifeng Zhang</a><sup>2</sup>
+                  <a href="" target="_blank">Jieming Chen</a><sup>2</sup>
                 </span>
                 <span class="author-block">
-                  <a href="https://wjiawei.com" target="_blank">Jiawei Wang</a><sup>3</sup>,</span>
+                  <a href="" target="_blank">Tingguang Zhou</a><sup>1</sup>,</span>
 
                   <span class="author-block">
-                    <a href="https://scholar.google.com/citations?user=MlK35S4AAAAJ&hl=en" target="_blank">Mengchi Cai</a><sup>1</sup>,
+                    <a href="https://scholar.google.com/citations?user=ncDpC9gAAAAJ&hl=en" target="_blank">Jianghong Dong</a><sup>3</sup>,
                   </span>
 
                   <span class="author-block">
-                    <a href="https://scholar.google.com/citations?user=x58fnLQAAAAJ&hl=en" target="_blank">Keqiang Li</a><sup>1</sup>, and 
+                    <a href="" target="_blank">Yuhong Cao</a><sup>1</sup>, and 
                   </span>
                   <span class="author-block">
-                    <a href="https://www.marmotlab.org/bio.html" target="_blank">Guillaume Sartoretti</a><sup>2</sup>
+                    <a href="" target="_blank">Tanishq Duhan</a><sup>1</sup>, and 
+                  </span>
+                  <span class="author-block">
+                    <a href="https://www.marmotlab.org/bio.html" target="_blank">Guillaume Sartoretti</a><sup>1</sup>
                   </span>
 
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1</sup>Tsinghua University, <sup>2</sup>National University of Singapore, <sup>3</sup>University of Michigan</span>
+                    <span class="author-block"><sup>1</sup>National University of Singapore, <sup>2</sup>Hong Kong Polytechnic University, <sup>3</sup>Tsinghua University</span>
                   </div>
 
             </div>
@@ -91,15 +94,6 @@
   </div>
 </section>
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <h2 class="title is-3">   <p style="color: blueviolet;"> All video source files can be accessed <a href="https://github.com/dongjh20/WMRs-Formation-with-LLM/tree/master/static/videos" target="_blank">here</a>.  </p>
-      </h2>
-    </div>
-  </div>
-</section>
 
 <!-- Teaser video-->
 <section class="hero teaser">
@@ -113,14 +107,14 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <h2 class="title is-3">1. Comprehensive experiments</h2>
+      <h2 class="title is-3">1. Intersection Scenario </h2>
       <video poster="" id="tree" controls muted height="100%">
         <!-- Your video here -->
-        <source src="static/videos/formationSimulation.mp4"
+        <source src="static/videos/6_inter_fade.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        During formation switching, the WMR formations encounter obstacles and is able to avoid them while switching to the new formation. Our method demonstrates strong adaptability and flexibility to real-world environments. When the need for formation switching is identified, we leverage LLMs to understand the environment and task requirements, and then reason to generate a new desired formation.
+        In the interaction-intensive intersection environment, COIN demonstrates superior control and collaboration capabilities, exhibiting almost no collisions and very few off-road incidents. By accurately modeling interactions among vehicles during the optimization of global objectives, COIN achieves efficient and rational yielding and overtaking behaviors, thus enhancing overall traffic efficiency.
       </h2>
     </div>
   </div>
@@ -130,75 +124,48 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <h2 class="title is-3">2. Formation navigation with dense obstacles</h2>
+      <h2 class="title is-3">2. Roundabout Scenario</h2>
       <video poster="" id="tree" controls muted height="100%">
         <!-- Your video here -->
-        <source src="static/videos/formationDense.mp4"
+        <source src="static/videos/6_round_fade.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Formation navigating through dense obstacles. Our spatio-temporal joint optimization trajectory planning method demonstrates strong coordination and multi-objective optimization capabilities, making it well-suited for such challenging environments.      </h2>
+        COIN demonstrates strong stability and safety, maintaining smooth trajectories and orderly traffic flow. In contrast, TraCo and CoPO often result in collisions or deviations when vehicles exit the roundabout, while IPPO and ITD3 exhibit poorer stability, leading to frequent collisions during navigation.</h2>
     </div>
   </div>
 </section>
 <!-- End teaser video -->
 
-<!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <h2 class="title is-3">Real-world experiments</h2>
-    </div>
-  </div>
-</section>
-
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <h3 class="title is-3">1. Formation navigation</h3>
+      <h2 class="title is-3">3. Bottleneck Scenario</h2>
       <video poster="" id="tree" controls muted height="100%">
         <!-- Your video here -->
-        <source src="static/videos/formationMotion.mp4"
+        <source src="static/videos/6_bottle_fade.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Seven robots arranged in three columns move in a hexagonal formation.
-      </h2>
+        COIN effectively models both local and global interactions, enabling it to arrange the vehicle passing order appropriately and significantly reducing conflicts and congestion. In the later stages, where interactions become less frequent, COIN maintains highly consistent trajectories with very low error rates, highlighting its capability to balance individual navigation and global cooperation objectives effectively.</h2>
     </div>
   </div>
 </section>
 <!-- End teaser video -->
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <h2 class="title is-3">2. Autonomous obstacle avoidance during formation navigation</h2>
-      <video poster="" id="tree" controls muted height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/formationObsAvoid.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        The two outermost robots balance formation maintenance and obstacle avoidance simultaneously. This capability enhances the adaptability and flexibility of the WMR formations in real-world environments, as the surroundings are not always open and free of obstacles.
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
 
-<!-- Teaser video-->
+
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <h2 class="title is-3">3. Formation switching</h2>
+      <h3 class="title is-3">Hybrid Real-World Demonstration with Physical Mobile Robots</h3>
       <video poster="" id="tree" controls muted height="100%">
         <!-- Your video here -->
-        <source src="static/videos/formationSwitching.mp4"
+        <source src="static/videos/modified_demo.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        The formation of seven WMRs switches from three columns to two. Such switching enhances the WMR formations' adaptability to real-world environments. For example, sudden changes in navigable areas represent one type of environments where the formation must adjust accordingly.
+        The demonstration shows the robots navigating efficiently to their destinations while cooperating to avoid collisions, highlighting COIN’s effectiveness in complex MASD systems and its potential for end-to-end navigation in realistic and challenging traffic environments.
       </h2>
     </div>
   </div>
@@ -216,7 +183,16 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Formation control of wheeled mobile robots (WMRs) has been extensively studied for its applications in many fields such as logistics transportation and resource exploration. However, previous work has mainly focused on simple scenarios with fixed formation configurations, which significantly limits their flexibility and adaptability in  real-world environments with obstacles. To address this, we propose a semi-distributed formation control approach for WMRs that combines centralized formation generation with distributed trajectory planning. We leverage the pre-trained generalized understanding and reasoning capabilities of large language models (LLMs) to comprehend complex real-world environments and dynamic tasks, adaptively generating new desired formations. We also present a distributed formation trajectory planning method that effectively coordinates each WMR’s spatio-temporal relationships with others during formation navigation, and efficiently balances conflicting objectives, such as formation maintenance and obstacle avoidance, via integrated optimization. Simulations and real-world experiments confirm the effectiveness and superiority of our approach over advanced baselines. Experiment videos are available at https://dongjh20.github.io/WMRs-Formation-with-LLM.     
+            Multi-Agent Self-Driving (MASD) systems provide an effective solution for coordinating autonomous vehicles to reduce congestion and enhance both safety and operational efficiency in future intelligent transportation systems.
+Recently, Multi-Agent Reinforcement Learning (MARL) has emerged as a promising approach for developing advanced end-to-end MASD systems. 
+However, achieving efficient collaboration in dynamic MASD systems remains a significant challenge due to the complex interactions among agents in dense scenarios. 
+To address this, we propose a novel collaborative(CO-) interaction-aware(-IN) MARL framework, named COIN. 
+Specifically, we propose a new counterfactual individual-global twin delayed deep deterministic policy gradient (CIG-TD3) algorithm, crafted in a centralized training and decentralized execution (CTDE) manner, which aims to jointly optimize the individual objectives (navigation) and the global objectives (collaboration) of agents. 
+To further enhance the optimization of global collaborative objectives, we introduce a novel dual-level interaction-aware centralized critic architecture that employs variational inference to identify local interactions between key pairs of agents through their impact on state transitions and rewards.
+We then combine agents' local interaction features with their state-action information and utilize an attention mechanism to capture global interactions across agents.
+This enables COIN to effectively capture both micro-level agent interactions and macro-level overall system interactions for more accurate global value estimation, thus enhancing credit assignment and facilitating the learning of more efficient collaborative navigation strategies. 
+We conduct extensive simulation experiments in dense urban traffic environments, including roundabouts, intersections, and bottlenecks, which demonstrate that COIN consistently outperforms other advanced baseline methods in both safety and efficiency across various system sizes.
+These results highlight its superiority in complex and dynamic MASD scenarios, as further validated through real-world robot demonstrations.     
           </p>
         </div>
       </div>
@@ -229,11 +205,11 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3" style="max-width: 60%; margin: auto; text-align: center;">Method framework</h2> <!-- Title for the image -->
+      <h2 class="title is-3" style="max-width: 60%; margin: auto; text-align: center;">COIN Framework</h2> <!-- Title for the image -->
       <br>
       <div class="image-container has-text-centered" style="max-width: 60%; margin: auto;">
         <!-- Your image here with adjusted width -->
-        <img src="static/images/framework V26.jpg" alt="Descriptive Alt Text" style="height: auto;"/>
+        <img src="static/images/introduction.png" alt="Descriptive Alt Text" style="height: auto;"/>
       </div>
     </div>
   </div>
@@ -259,7 +235,7 @@
         <div class="content">
           <p class="columns is-centered">
             This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.          </p>
-          <p class="columns is-centered" >&copy;2024 Jianghong Dong</p>
+          <p class="columns is-centered" >&copy;2025 Yifeng Zhang</p>
         </div>
       </div>
     </div>
@@ -267,43 +243,7 @@
 </footer>
 
 
-<!-- 访客地理位置代码 -->
 
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      
-      <div class="image-container has-text-centered" style="max-width: 60%; margin: auto;">
-        <!-- Your image here with adjusted width -->
-        <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=O4FjFOfenDlfZzoaMVwO2CSUOZRAyVWLliMDFcNEwmk&cl=ffffff&w=a"></script>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-<!-- Default Statcounter code for WMRs-Formation-with-LLM
-https://github.com/dongjh20/WMRs-Formation-with-LLM -->
-<script type="text/javascript">
-  var sc_project=13036282; 
-  var sc_invisible=0; 
-  var sc_security="c527f9bb"; 
-  var scJsHost = "https://";
-  document.write("<sc"+"ript type='text/javascript' src='" +
-  scJsHost+
-  "statcounter.com/counter/counter.js'></"+"script>");
-  </script>
-  <noscript><div class="statcounter"><a title="Web Analytics
-  Made Easy - Statcounter" href="https://statcounter.com/"
-  target="_blank"><img class="statcounter"
-  src="https://c.statcounter.com/13036282/0/c527f9bb/0/"
-  alt="Web Analytics Made Easy - Statcounter"
-  referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-  <!-- End of Statcounter Code -->
 
 
   </body>
