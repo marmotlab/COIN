@@ -119,107 +119,74 @@ These results highlight its superiority in complex and dynamic MASD scenarios, a
 <!-- End paper abstract -->
 
 <!-- Single Image with Title -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3" style="max-width: 60%; margin: auto; text-align: center;">Overall COIN Framework</h2> <!-- Title for the image -->
-      <br>
-      <div class="image-container has-text-centered" style="max-width: 60%; margin: auto;">
-        <!-- Your image here with adjusted width -->
-        <img src="static/images/introduction.png" alt="Descriptive Alt Text" style="height: auto;"/>
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Overall COIN Framework</h2>
+        <div class="image-container">
+          <img src="static/images/introduction.png" alt="Descriptive Alt Text" style="width: 100%; height: auto;"/>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Teaser video-->
-<section class="hero teaser">
+<!-- Unified Video Demonstration Block -->
+<section class="section hero is-light">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <h2 class="title is-3">Demonstrations in the MetaDrive Simulator</h2>
-    </div>
-  </div>
-</section>
+    <h2 class="title is-3 has-text-centered">Demonstrations in the MetaDrive Simulator</h2>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <h2 class="title is-3">1. Intersection Scenario </h2>
-      <video poster="" id="tree" controls muted height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/6_inter_fade.mp4"
-        type="video/mp4">
+    <!-- Scenario 1: Intersection -->
+    <div class="box">
+      <h3 class="title is-4">1. Intersection Scenario</h3>
+      <video poster="" controls muted style="width: 100%; height: auto;">
+        <source src="static/videos/6_inter_fade.mp4" type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-left">
-        In the interaction-intensive intersection environment, COIN demonstrates superior control and collaboration capabilities, exhibiting almost no collisions and very few off-road incidents. By accurately modeling interactions among vehicles during the optimization of global objectives, COIN achieves efficient and rational yielding and overtaking behaviors, thus enhancing overall traffic efficiency.
-      </h2>
+      <p class="subtitle is-6 has-text-left" style="margin-top: 1em;">
+        In the interaction-intensive (i.e., the most challenging) intersection environment, COIN demonstrates superior control and collaboration capabilities, exhibiting almost no collisions and very few off-road incidents. By accurately modeling local and global interactions among vehicles during the policy optimization process, COIN achieves efficient and rational yielding and overtaking behaviors, thus enhancing overall safety and traffic efficiency.
+      </p>
     </div>
-  </div>
-</section>
-<!-- End teaser video -->
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <h2 class="title is-3">2. Roundabout Scenario</h2>
-      <video poster="" id="tree" controls muted height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/6_round_fade.mp4"
-        type="video/mp4">
+    <!-- Scenario 2: Roundabout -->
+    <div class="box">
+      <h3 class="title is-4">2. Roundabout Scenario</h3>
+      <video poster="" controls muted style="width: 100%; height: auto;">
+        <source src="static/videos/6_round_fade.mp4" type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-left">
-        COIN demonstrates strong stability and safety, maintaining smooth trajectories and orderly traffic flow. In contrast, TraCo and CoPO often result in collisions or deviations when vehicles exit the roundabout, while IPPO and ITD3 exhibit poorer stability, leading to frequent collisions during navigation.</h2>
+      <p class="subtitle is-6 has-text-left" style="margin-top: 1em;">
+        COIN demonstrates strong stability and safety, maintaining smoother trajectories and more orderly traffic flow compared with various baselines. In contrast, TraCo and CoPO often result in collisions or deviations when vehicles exit the roundabout, while IPPO and ITD3 exhibit poorer stability, leading to frequent collisions during navigation.
+      </p>
     </div>
-  </div>
-</section>
-<!-- End teaser video -->
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <h2 class="title is-3">3. Bottleneck Scenario</h2>
-      <video poster="" id="tree" controls muted height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/6_bottle_fade.mp4"
-        type="video/mp4">
+    <!-- Scenario 3: Bottleneck -->
+    <div class="box">
+      <h3 class="title is-4">3. Bottleneck Scenario</h3>
+      <video poster="" controls muted style="width: 100%; height: auto;">
+        <source src="static/videos/6_bottle_fade.mp4" type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-left">
-        COIN effectively models both local and global interactions, enabling it to arrange the vehicle passing order appropriately and significantly reducing conflicts and congestion. In the later stages, where interactions become less frequent, COIN maintains highly consistent trajectories with very low error rates, highlighting its capability to balance individual navigation and global cooperation objectives effectively.</h2>
+      <p class="subtitle is-6 has-text-left" style="margin-top: 1em;">
+        COIN effectively models both local and global interactions, allowing it to efficiently coordinate vehicle passing sequences and significantly reduce conflicts and congestion. In the later stages, where interactions become less frequent, COIN maintains highly consistent trajectories with very low error rates, highlighting its capability to balance individual navigation and global cooperation objectives effectively.
+      </p>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
 
-
-
-<section class="hero teaser">
+<!-- Real-World Demonstration Block -->
+<section class="section hero is-light">
   <div class="container is-max-desktop">
-    <div class="hero-body">
+    <div class="box">
       <h3 class="title is-3">Hybrid Real-World Demonstration with Physical Mobile Robots</h3>
-      <video poster="" id="tree" controls muted height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/modified_demo.mp4"
-        type="video/mp4">
+      <video poster="" controls muted style="width: 100%; height: auto;">
+        <source src="static/videos/modified_demo.mp4" type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-left">
+      <p class="subtitle is-6 has-text-left" style="margin-top: 1em;">
         The demonstration shows the robots navigating efficiently to their destinations while cooperating to avoid collisions, highlighting COIN’s effectiveness in complex MASD systems and its potential for end-to-end navigation in realistic and challenging traffic environments.
-      </h2>
+      </p>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
 
-
-
-
-<!--BibTex citation 
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
-</section>
---End BibTex citation -->
 
 
   <footer class="footer">
