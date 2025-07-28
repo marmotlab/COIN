@@ -59,25 +59,23 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="" target="_blank">Yifeng Zhang</a><sup>1</sup>,</span>
+                <a href="https://scholar.google.com/citations?user=o9zHCC0AAAAJ&hl=zh-CN" target="_blank">Yifeng Zhang</a><sup>1</sup>,</span>
                 <span class="author-block">
-                  <a href="" target="_blank">Jieming Chen</a><sup>2</sup>
+                  <a href="https://scholar.google.com/citations?user=bmLr54AAAAAJ&hl=zh-CN" target="_blank">Jieming Chen</a><sup>2</sup>
                 </span>
                 <span class="author-block">
                   <a href="" target="_blank">Tingguang Zhou</a><sup>1</sup>,</span>
-
                   <span class="author-block">
                     <a href="https://scholar.google.com/citations?user=ncDpC9gAAAAJ&hl=en" target="_blank">Jianghong Dong</a><sup>3</sup>,
                   </span>
-
                   <span class="author-block">
-                    <a href="" target="_blank">Yuhong Cao</a><sup>1</sup>, and 
+                    <a href="https://scholar.google.com/citations?user=t7r7tjUAAAAJ&hl=zh-CN&oi=ao" target="_blank">Yuhong Cao</a><sup>1</sup>, and
                   </span>
                   <span class="author-block">
-                    <a href="" target="_blank">Tanishq Duhan</a><sup>1</sup>, and 
+                    <a href="https://scholar.google.com/citations?user=rTz0anAAAAAJ&hl=zh-CN&oi=sra" target="_blank">Tanishq Duhan</a><sup>1</sup>, and
                   </span>
                   <span class="author-block">
-                    <a href="https://www.marmotlab.org/bio.html" target="_blank">Guillaume Sartoretti</a><sup>1</sup>
+                    <a href="https://scholar.google.com/citations?user=n7NzZ0sAAAAJ&hl=zh-CN" target="_blank">Guillaume Sartoretti</a><sup>1</sup>
                   </span>
 
                   </div>
@@ -94,12 +92,51 @@
   </div>
 </section>
 
+  <!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Multi-Agent Self-Driving (MASD) systems provide an effective solution for coordinating autonomous vehicles to reduce congestion and enhance both safety and operational efficiency in future intelligent transportation systems.
+Recently, Multi-Agent Reinforcement Learning (MARL) has emerged as a promising approach for developing advanced end-to-end MASD systems.
+However, achieving efficient collaboration in dynamic MASD systems remains a significant challenge due to the complex interactions among agents in dense scenarios.
+To address this, we propose a novel collaborative(CO-) interaction-aware(-IN) MARL framework, named COIN.
+Specifically, we propose a new counterfactual individual-global twin delayed deep deterministic policy gradient (CIG-TD3) algorithm, crafted in a centralized training and decentralized execution (CTDE) manner, which aims to jointly optimize the individual objectives (navigation) and the global objectives (collaboration) of agents.
+To further enhance the optimization of global collaborative objectives, we introduce a novel dual-level interaction-aware centralized critic architecture that employs variational inference to identify local interactions between key pairs of agents through their impact on state transitions and rewards.
+We then combine agents' local interaction features with their state-action information and utilize an attention mechanism to capture global interactions across agents.
+This enables COIN to effectively capture both micro-level agent interactions and macro-level overall system interactions for more accurate global value estimation, thus enhancing credit assignment and facilitating the learning of more efficient collaborative navigation strategies.
+We conduct extensive simulation experiments in dense urban traffic environments, including roundabouts, intersections, and bottlenecks, which demonstrate that COIN consistently outperforms other advanced baseline methods in both safety and efficiency across various system sizes.
+These results highlight its superiority in complex and dynamic MASD scenarios, as further validated through real-world robot demonstrations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Single Image with Title -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3" style="max-width: 60%; margin: auto; text-align: center;">Overall COIN Framework</h2> <!-- Title for the image -->
+      <br>
+      <div class="image-container has-text-centered" style="max-width: 60%; margin: auto;">
+        <!-- Your image here with adjusted width -->
+        <img src="static/images/introduction.png" alt="Descriptive Alt Text" style="height: auto;"/>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <h2 class="title is-3">Simulations</h2>
+      <h2 class="title is-3">Demonstrations in the MetaDrive Simulator</h2>
     </div>
   </div>
 </section>
@@ -113,7 +150,7 @@
         <source src="static/videos/6_inter_fade.mp4"
         type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
+      <h2 class="subtitle has-text-left">
         In the interaction-intensive intersection environment, COIN demonstrates superior control and collaboration capabilities, exhibiting almost no collisions and very few off-road incidents. By accurately modeling interactions among vehicles during the optimization of global objectives, COIN achieves efficient and rational yielding and overtaking behaviors, thus enhancing overall traffic efficiency.
       </h2>
     </div>
@@ -130,7 +167,7 @@
         <source src="static/videos/6_round_fade.mp4"
         type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
+      <h2 class="subtitle has-text-left">
         COIN demonstrates strong stability and safety, maintaining smooth trajectories and orderly traffic flow. In contrast, TraCo and CoPO often result in collisions or deviations when vehicles exit the roundabout, while IPPO and ITD3 exhibit poorer stability, leading to frequent collisions during navigation.</h2>
     </div>
   </div>
@@ -146,7 +183,7 @@
         <source src="static/videos/6_bottle_fade.mp4"
         type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
+      <h2 class="subtitle has-text-left">
         COIN effectively models both local and global interactions, enabling it to arrange the vehicle passing order appropriately and significantly reducing conflicts and congestion. In the later stages, where interactions become less frequent, COIN maintains highly consistent trajectories with very low error rates, highlighting its capability to balance individual navigation and global cooperation objectives effectively.</h2>
     </div>
   </div>
@@ -164,56 +201,13 @@
         <source src="static/videos/modified_demo.mp4"
         type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
+      <h2 class="subtitle has-text-left">
         The demonstration shows the robots navigating efficiently to their destinations while cooperating to avoid collisions, highlighting COIN’s effectiveness in complex MASD systems and its potential for end-to-end navigation in realistic and challenging traffic environments.
       </h2>
     </div>
   </div>
 </section>
 <!-- End teaser video -->
-
-
-
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Multi-Agent Self-Driving (MASD) systems provide an effective solution for coordinating autonomous vehicles to reduce congestion and enhance both safety and operational efficiency in future intelligent transportation systems.
-Recently, Multi-Agent Reinforcement Learning (MARL) has emerged as a promising approach for developing advanced end-to-end MASD systems. 
-However, achieving efficient collaboration in dynamic MASD systems remains a significant challenge due to the complex interactions among agents in dense scenarios. 
-To address this, we propose a novel collaborative(CO-) interaction-aware(-IN) MARL framework, named COIN. 
-Specifically, we propose a new counterfactual individual-global twin delayed deep deterministic policy gradient (CIG-TD3) algorithm, crafted in a centralized training and decentralized execution (CTDE) manner, which aims to jointly optimize the individual objectives (navigation) and the global objectives (collaboration) of agents. 
-To further enhance the optimization of global collaborative objectives, we introduce a novel dual-level interaction-aware centralized critic architecture that employs variational inference to identify local interactions between key pairs of agents through their impact on state transitions and rewards.
-We then combine agents' local interaction features with their state-action information and utilize an attention mechanism to capture global interactions across agents.
-This enables COIN to effectively capture both micro-level agent interactions and macro-level overall system interactions for more accurate global value estimation, thus enhancing credit assignment and facilitating the learning of more efficient collaborative navigation strategies. 
-We conduct extensive simulation experiments in dense urban traffic environments, including roundabouts, intersections, and bottlenecks, which demonstrate that COIN consistently outperforms other advanced baseline methods in both safety and efficiency across various system sizes.
-These results highlight its superiority in complex and dynamic MASD scenarios, as further validated through real-world robot demonstrations.     
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-<!-- Single Image with Title -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3" style="max-width: 60%; margin: auto; text-align: center;">COIN Framework</h2> <!-- Title for the image -->
-      <br>
-      <div class="image-container has-text-centered" style="max-width: 60%; margin: auto;">
-        <!-- Your image here with adjusted width -->
-        <img src="static/images/introduction.png" alt="Descriptive Alt Text" style="height: auto;"/>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 
