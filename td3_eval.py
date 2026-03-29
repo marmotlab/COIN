@@ -9,7 +9,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--policy", default="TD3")  # Policy name (TD3)
-    parser.add_argument("--env", default="bottleneck")  # MetaDrive environment name
+    parser.add_argument("--env_name", default="intersection")  # MetaDrive environment name
     parser.add_argument("--seed", default=0, type=int)  # Sets Gym, PyTorch and Numpy seeds
     parser.add_argument("--hidden_size", default=256, type=int, help='The number of hidden units')
     parser.add_argument("--expl_noise", default=0.01, type=float)  # Std of Gaussian exploration noise
@@ -18,7 +18,7 @@ if __name__ == "__main__":
     parser.add_argument("--policy_noise", default=0.2)  # Noise added to target policy during critic update
     parser.add_argument("--noise_clip", default=0.5)  # Range to clip target policy noise
     parser.add_argument("--policy_freq", default=2, type=int)  # Frequency of delayed policy updates
-    parser.add_argument("--model_path", default="4000_mode/bottleneck")  # Model load file name, "" doesn't load, "default" uses file_name
+    parser.add_argument("--model_path", default="", required=True)  # Model load file name, "" doesn't load, "default" uses file_name
     parser.add_argument("--num_eval", default=20, type=int)  # Number of episodes for evaluation
     parser.add_argument("--num_agents", default=30, type=int) # Number of agents
     parser.add_argument("--gui", default=True, type=bool)  # Activate Metadrive gui window

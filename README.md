@@ -39,7 +39,7 @@ cd COIN
 
 ### 3. Install MetaDrive
 
-Install MetaDrive via:
+Install MetaDrive (0.4.2.3) via:
 
 ```bash
 git clone https://github.com/metadriverse/metadrive.git
@@ -74,6 +74,12 @@ Train COIN with the main script:
 python td3_main.py --env_name intersection --seed 1000
 ```
 
+`--env_name` supports three scenarios:
+
+- `intersection`
+- `roundabout`
+- `bottleneck`
+
 Note: For all reported experiments, we train the model with 8 different random seeds: `1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000`. 
 
 Training outputs are saved under a timestamped directory in `runs/`, including:
@@ -94,7 +100,7 @@ tensorboard --logdir runs
 Evaluate a trained model with:
 
 ```bash
-python td3_eval.py --env bottleneck --model_path runs/<your_run_dir> --num_eval 20 --gui True
+python td3_eval.py --env_name intersection --model_path runs/<your_run_dir> --num_eval 20 --gui True
 ```
 
 What the evaluation script does:
@@ -107,10 +113,13 @@ What the evaluation script does:
 If you are running on a headless server, set:
 
 ```bash
-python td3_eval.py --env bottleneck --model_path runs/<your_run_dir> --gui False
+python td3_eval.py --env_name bottleneck --model_path runs/<your_run_dir> --gui False
 ```
 
 ## Results
+
+For training and evaluating baseline methods, please refer to the [CoPO](https://github.com/decisionforce/CoPO) codebase and its configuration setup:
+
 
 <div align="center">
   <img src="static/images/results_radar.png" width="720" alt="COIN radar results">
