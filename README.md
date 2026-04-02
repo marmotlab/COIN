@@ -152,4 +152,6 @@ If you find this repository useful, please cite the paper:
 
 ## License
 
-Please follow the licenses of this repository and all upstream dependencies, especially MetaDrive and any assets or external components included in the project tree.
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+© 2026 [MARMot Lab](https://marmotlab.org/) @ NUS-ME
