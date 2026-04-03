@@ -3,7 +3,7 @@ import argparse
 import numpy as np
 
 from utils import set_eval_env, save_as_json
-from td3 import TD3
+from models.coin import TD3
 
 if __name__ == "__main__":
 

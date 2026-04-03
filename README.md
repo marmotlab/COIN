@@ -71,7 +71,7 @@ Notes:
 Train COIN with the main script:
 
 ```bash
-python td3_main.py --env_name intersection --seed 1000
+python coin_main.py --env_name intersection --seed 1000
 ```
 
 `--env_name` supports three scenarios:
@@ -100,7 +100,7 @@ tensorboard --logdir runs
 Evaluate a trained model with:
 
 ```bash
-python td3_eval.py --env_name intersection --model_path runs/<your_run_dir> --num_eval 20 --gui True
+python coin_eval.py --env_name intersection --model_path runs/<your_run_dir> --num_eval 20 --gui True
 ```
 
 What the evaluation script does:
@@ -113,7 +113,7 @@ What the evaluation script does:
 If you are running on a headless server, set:
 
 ```bash
-python td3_eval.py --env_name bottleneck --model_path runs/<your_run_dir> --gui False
+python coin_eval.py --env_name bottleneck --model_path runs/<your_run_dir> --gui False
 ```
 
 ## Results

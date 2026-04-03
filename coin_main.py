@@ -1,14 +1,13 @@
 import os
-import math
 import torch
 import random
 import argparse
 import datetime
 import numpy as np
 
-from td3 import TD3
+from models.coin import TD3
 from utils import set_env
-from td3_replay_buffer import ReplayBuffer
+from coin_replay_buffer import ReplayBuffer
 from torch.utils.tensorboard import SummaryWriter
 
 if __name__ == "__main__":
