@@ -94,6 +94,9 @@ To monitor training:
 ```bash
 tensorboard --logdir runs
 ```
+## Checkpoints
+
+The weights of models trained in three scenarios with eight seeds are provided in `./runs/<env_name>`. 
 
 ## Evaluation
 
